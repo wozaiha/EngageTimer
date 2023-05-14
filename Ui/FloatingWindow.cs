@@ -65,9 +65,9 @@ public sealed class FloatingWindow : IDisposable
 
         if (!_firstLoad && !stopwatchActive && !countdownActive) return;
 
-        if (_font.IsLoaded()) ImGui.PushFont(_font);
+        //if (_font.IsLoaded()) ImGui.PushFont(_font);
         DrawWindow(stopwatchActive, countdownActive);
-        if (_font.IsLoaded()) ImGui.PopFont();
+        //if (_font.IsLoaded()) ImGui.PopFont();
 
         if (_firstLoad) _firstLoad = false;
     }
